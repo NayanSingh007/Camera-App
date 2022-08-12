@@ -1,0 +1,111 @@
+html{
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  margin: 0;
+  background: #000;
+  /*overflow: hidden;*/
+}
+
+.App{
+  position: relative;
+}
+
+.cam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.camera{
+  background: #000;
+  height: 80vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+video{
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.click, .feat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgview{
+  position: absolute;
+  top: 0px; left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noShow{
+  display: none;
+}
+
+.can{
+  width: 60%;
+  height: auto;
+}
+
+.click{
+  margin: 0;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  background-color: crimson;
+  align-self: center;
+}
+
+.download{
+  width: 4rem;
+  height: 4rem;
+  color: #5DBAE8;
+  margin-left: 5rem;
+}
+
+.close{
+  width: 4rem;
+  height: 4rem;
+  color: #c30505;
+  margin-right: 5rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .cam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .camera{
+    margin: 0;
+    margin-top: 5rem;
+  }
+
+  .click{
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .download{
+    align-self: flex-end;
+  }
+
+
+}
